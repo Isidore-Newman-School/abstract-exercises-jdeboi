@@ -2,6 +2,9 @@
 
 How many concrete classes?
 
+
+How many abstract classes?
+
 */
 
 public abstract class Ship {
@@ -9,7 +12,8 @@ public abstract class Ship {
   private int x, y;
 
   public Ship() {
-   super();
+    x = (int) (Math.random()*width);
+    y = (int) (Math.random()*height);
   }
 
   public int getX() {
@@ -31,10 +35,8 @@ public abstract class Ship {
   public abstract void display();
 
 
-
-
-  public void move() {
-    // implement
+  public void move() { 
+    // your code here
   }
 
   // abstract fire() method

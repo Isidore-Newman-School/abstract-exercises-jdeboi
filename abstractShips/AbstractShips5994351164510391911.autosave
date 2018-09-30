@@ -19,5 +19,8 @@ void setup() {
 void draw() {
   background(0);
 
-  // call methods
+  ds.display();
+  sd.display();
+  ds.move();
+  sd.move();
 }
